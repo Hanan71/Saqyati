@@ -100,6 +100,6 @@ const char* WIFI_PASS = "YOUR_WIFI_PASSWORD";
 
 Flash the code to your ESP board and verify pin triggers to the mist driver board.
 
-[![View Pitch Deck on Canva](https://img.shields.io/badge/Canva-View%20Pitch%20Deck-4CAF50?style=for-the-badge&logo=canva&logoColor=white)](https://canva.link/d7cszetln016mrj) 👈 click here to view
+[![View Pitch Deck on Canva](https://img.shields.io/badge/Canva-View%20Pitch%20Deck-4CAF50?style=for-the-badge&logo=canva&logoColor=white)](https://canva.link/d7cszetln016mrj) 👈 click here to view pitch deck
 
 📄 All rights reserved © 2026e.
