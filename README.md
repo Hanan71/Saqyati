@@ -1,18 +1,19 @@
-<table border="0">
-  <tr>
-    <td width="200" align="center" valign="middle" style="border: none;">
-      <img width="180" alt="Saqyati Logo" src="https://github.com/user-attachments/assets/f87b3f90-c9dc-42ab-828d-d328bdf97505" />
-    </td>
-    <td valign="middle" style="border: none; padding-left: 20px;">
-      <h1 style="margin: 0;">🌱 Saqyati | Smart Plant Care IoT</h1>
-      <p style="margin: 8px 0 0 0; font-size: 1.05em;">
-        <b>From Automatic Watering to Remotely Autonomous Indoor Plant Care 🌿🤖</b><br>
-        <i>An upcycled, AI-ready IoT misting ecosystem for sensitive indoor plants</i>
-      </p>
-    </td>
-  </tr>
-</table>
-
+<div align="center">
+  <table border="0">
+    <tr>
+      <td valign="middle" align="center" style="border: none; padding-right: 20px;">
+        <h1 style="margin: 0;">🌱 Saqyati | Smart Plant Care IoT</h1>
+        <p style="margin: 8px 0 0 0; font-size: 1.05em;">
+          <b>From Automatic Watering to Remotely Autonomous Indoor Plant Care 🌿🤖</b><br>
+          <i>An upcycled, AI-ready IoT misting ecosystem for sensitive indoor plants</i>
+        </p>
+      </td>
+      <td width="200" align="center" valign="middle" style="border: none;">
+        <img width="180" alt="Saqyati Logo" src="https://github.com/user-attachments/assets/f87b3f90-c9dc-42ab-828d-d328bdf97505" />
+      </td>
+    </tr>
+  </table>
+</div>
 ---
 
 ## 📌 Project Overview
