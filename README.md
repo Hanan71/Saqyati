@@ -109,7 +109,47 @@ const char* WIFI_PASS = "YOUR_WIFI_PASSWORD";
 
 Flash the code to your ESP board and verify pin triggers to the mist driver board.
 
+---
+## 🤖 AI Smart Agent & Autonomous Control (AI Fogponics Agent)
 
+The system features an integrated AI Agent powered by **Google Gemini 3.6 Flash** and a **FastAPI** backend, functioning as both an interactive agricultural guide and a smart hardware controller:
+
+### 🌟 Key Capabilities
+* **Natural Language Understanding (NLU):** Interprets user commands in natural language and converts conversational intent into physical hardware actions.
+* **Direct Hardware Automation:** Dispatches direct asynchronous HTTP triggers across the local network to the **ESP8266** microcontroller to toggle ultrasonic misting.
+* **Domain-Specific Plant Guidance:** Provides tailored agronomic recommendations, nutrient schedules, and root-zone care instructions optimized for fogponics setups.
+
+### 🛠️ Technical Architecture
+* **Backend Framework:** FastAPI, Uvicorn, HTTPX (Asynchronous Client)
+* **LLM Engine:** Google GenAI SDK (`gemini-3.6-flash`)
+* **Embedded Hardware:** ESP8266 (WiFi Web Server & Pulse Actuator)
+* **Frontend Integration:** Web Dashboard communicating with the `/api/chat` endpoint via REST APIs
+
+---
+
+### 🚀 Running the Agent Server (macOS)
+
+#### 1. Prerequisites
+Ensure Python 3.10+ and the required dependencies are installed:
+
+```bash
+pip3 install fastapi uvicorn httpx google-genai pydantic
+
+2. Start the Server
+Navigate to the project root directory in Terminal and run:
+
+python3 agent_server.py
+
+The Uvicorn server will start locally at:
+INFO:     Uvicorn running on [http://127.0.0.1:8000](http://127.0.0.1:8000) (Press CTRL+C to quit)
+
+3. Hardware & Web Dashboard Access
+Make sure your Mac and the ESP8266 are connected to the same local Wi-Fi / hotspot network.
+
+Verify the microcontroller IP address (default: 172.20.10.6) in agent_server.py or through the dashboard interface.
+
+Open the web dashboard via Live Server (http://127.0.0.1:5500) to send natural language prompts (e.g., "اسقِ النبتة الحين") and control the mister in real-time.
+```
 ---
 
 [![View Pitch Deck on Canva](https://img.shields.io/badge/Canva-View%20Pitch%20Deck-4CAF50?style=for-the-badge&logo=canva&logoColor=white)](https://canva.link/d7cszetln016mrj) 👈 click here to view pitch deck
