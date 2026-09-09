@@ -83,6 +83,7 @@ The MVP of **Saqyati** embodies circular electronics and **hardware upcycling**:
 
 
 ## 💻 Getting Started
+Arduino IDE code: https://github.com/Hanan71/Saqyati/tree/main/saqyati_code 
 Hardware Prerequisites
 ESP microcontroller (ESP32 or ESP8266)
 
@@ -125,7 +126,7 @@ The system features an integrated AI Agent powered by **Google Gemini 3.6 Flash*
 * **Embedded Hardware:** ESP8266 (WiFi Web Server & Pulse Actuator)
 * **Frontend Integration:** Web Dashboard communicating with the `/api/chat` endpoint via REST APIs
 
----
+
 
 ### 🚀 Running the Agent Server (macOS)
 
