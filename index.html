@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة تحكم ساقيتي | Saqyati</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>ساقيتي</h1>
+        <span class="subtitle">| نظام التحكم بالرذاذ</span>
+      </div>
+      <div class="header-controls">
+        <input type="text" id="espIp" class="ip-input" value="172.20.10.6" title="IP اللوحة" />
+        <div class="status-badge">
+          <div class="dot"></div>
+          <span id="connLabel">ESP8266 متصل</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="card-title">التحكم المباشر (محاكاة زر الرذاذ)</div>
+      <div class="trigger-container">
+        <button id="mistBtn" class="pulse-button" onclick="sendTriggerPulse()">
+          <span id="btnIcon">💧</span>
+          <span id="btnText">تشغيل الرذاذ</span>
+        </button>
+        <p class="card-note">
+          يرسل نبضة سحب للأرضي (LOW) لمدة 150ms على المنفذ D1
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="toggle-wrapper">
+        <div class="card-title no-margin">الري الأوتوماتيكي (جدولة ذاتية)</div>
+        <label class="switch">
+          <input type="checkbox" id="autoScheduleToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="schedule-grid">
+        <div class="input-group">
+          <label>التكرار الزمني</label>
+          <select id="intervalSelect">
+            <option value="4">كل 4 ساعات</option>
+            <option value="6" selected>كل 6 ساعات</option>
+            <option value="12">كل 12 ساعة</option>
+            <option value="24">كل 24 ساعة (يومياً)</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>مدة التبخير: <span id="durationValue">10</span> ثوانٍ</label>
+          <input type="range" id="durationRange" min="5" max="60" value="10" oninput="document.getElementById('durationValue').innerText = this.value">
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-title future-header">
+        <span>🚀</span> الميزات القادمة (مستقبلاً)
+      </div>
+
+      <div class="future-grid">
+        <div class="future-card">
+          <span class="future-tag">Hardware</span>
+          <h4>Soil Moisture Sensor</h4>
+          <p>معرفة حالة ورطوبة التربة فعلياً لجدولة التبخير عند الجفاف فقط.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-tag">Automation</span>
+          <h4>تعديل الكمية والوقت تلقائياً</h4>
+          <p>تغيير فترات الضخ وكميات الرذاذ بالاعتماد المباشر على قراءات الحساسات.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-tag">Multiple-Plant</span>
+          <h4>تخصيص ري كل نبتة</h4>
+          <p>توزيع الصمامات والري المخصص لكل نوع نبتة بدلاً من الجداول الموحدة.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-tag">Hardware</span>
+          <h4>Water Level Sensor</h4>
+          <p>تنبيه مباشر على الواجهة عند انخفاض منسوب مياه الخزان وإيقاف المضخة حمايةً لها.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-tag">AI / ML</span>
+          <h4>نماذج Machine Learning</h4>
+          <p>بناء نموذج ذكي يتنبأ بحاجة النباتات مستنداً إلى البيانات الحقيقية المحصودة.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-tag">Smart Care</span>
+          <h4>AI Recommendations</h4>
+          <p>نصائح وتوصيات زراعية ذكية حول الإضاءة، حرارة الجو وأوقات التسميد.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-tag">Nutrients</span>
+          <h4>كبسولات الأسمدة والمغذيات</h4>
+          <p>نظام لإضافة المغذيات والأسمدة المناسبة لماء الري تلقائياً دون تدخل يدوي.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
