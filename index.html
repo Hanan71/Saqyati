@@ -66,6 +66,26 @@
       </div>
     </section>
 
+
+    <!-- قسم المساعد الذكي ساقيتي -->
+    <section class="card">
+      <div class="card-title" style="color: var(--accent-cyan);">
+        <span>🤖</span> المساعد الزراعي الذكي (Saqyati Agent)
+      </div>
+      
+      <div id="chatBox" style="height: 220px; overflow-y: auto; background: rgba(0,0,0,0.35); border: 1px solid var(--card-border); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px;">
+        <div style="background: rgba(16, 185, 129, 0.15); padding: 8px 14px; border-radius: 10px; align-self: flex-start; max-width: 80%; font-size: 0.9rem;">
+          مرحباً بك! أنا مساعد ساقيتي الذكي 🌱 اسألني عن العناية بنباتاتك، أو اطلب مني تشغيل الرذاذ وسأتولى ذلك فوراً.
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 8px;">
+        <input type="text" id="chatInput" placeholder="اكتب سؤالك أو 'اسقِ النبتة الآن'..." style="flex: 1; background: rgba(0,0,0,0.4); border: 1px solid var(--card-border); color: #fff; padding: 12px; border-radius: 8px; outline: none;" onkeydown="if(event.key==='Enter') sendAgentMessage()" />
+        <button onclick="sendAgentMessage()" style="background: var(--primary); color: white; border: none; padding: 0 20px; border-radius: 8px; font-weight: 700; cursor: pointer;">إرسال</button>
+      </div>
+    </section>
+
+    
     <section class="card">
       <div class="card-title future-header">
         <span>🚀</span> الميزات القادمة (مستقبلاً)
