@@ -38,8 +38,9 @@
 
 ---
 ## 📌 Project Overview
-**Saqyati** is an intelligent IoT plant-care device designed for indoor greenery in apartments, offices, and modern homes. It addresses the common struggle of erratic watering schedules, under-watering during travel, and over-watering that leads to root rot, offering an automated, data-driven alternative to manual watering.
+**Saqyati** is an intelligent, eco-friendly IoT plant-care ecosystem designed for indoor greenery in apartments, offices, and modern homes. Built around the principles of **hardware upcycling and sustainable engineering**, the system repurposes a functional ultrasonic misting circuit salvaged from a discarded humidifier, interfacing it directly with an **ESP8266** microcontroller. 
 
+By breathing new life into electronic waste, Saqyati provides precision pulse-based fogponic hydration that tackles erratic watering schedules, neglect during travel, and root rot from over-watering—offering a fully automated, data-driven alternative to manual plant care.
 ---
 
 ## 💡 Why Ultrasonic Evaporative Misting?
