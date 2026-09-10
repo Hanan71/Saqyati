@@ -8,30 +8,35 @@
           <i>An upcycled, AI-ready IoT misting ecosystem for sensitive indoor plants</i>
         </p>
       </td>
-      <td width="200" align="center" valign="middle" style="border: none;">
-        <img width="180" alt="Saqyati Logo" src="https://github.com/user-attachments/assets/f87b3f90-c9dc-42ab-828d-d328bdf97505" />
+      <td width="160" align="center" valign="middle" style="border: none;">
+        <img width="140" alt="Saqyati Logo" src="https://github.com/user-attachments/assets/f87b3f90-c9dc-42ab-828d-d328bdf97505" />
       </td>
     </tr>
   </table>
 </div>
 
-
-<table>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://github.com/user-attachments/assets/260049ee-5e8f-4b6d-8e30-c8aed8b170c8" alt="Overview" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github.com/user-attachments/assets/2d4943d4-8d26-4e98-900b-1affae8c49b4" alt="Detail 1" width="100%" />
-    </td>
-    <td align="center" width="50%">
-      <img src="https://github.com/user-attachments/assets/59a85e38-0618-4b9c-ab4a-da0082c7a4de" alt="Detail 2" width="100%" />
-    </td>
-  </tr>
-</table>
-
+<div align="center">
+  <table>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="https://github.com/user-attachments/assets/d070604e-99dd-4f56-aaaf-afa6c8aa7e81" alt="Hardware Prototype" width="550" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="https://github.com/user-attachments/assets/260049ee-5e8f-4b6d-8e30-c8aed8b170c8" alt="Overview" width="550" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <img src="https://github.com/user-attachments/assets/2d4943d4-8d26-4e98-900b-1affae8c49b4" alt="Detail 1" width="270" />
+      </td>
+      <td align="center" width="50%">
+        <img src="https://github.com/user-attachments/assets/59a85e38-0618-4b9c-ab4a-da0082c7a4de" alt="Detail 2" width="270" />
+      </td>
+    </tr>
+  </table>
+</div>
 ---
 ## 📌 Project Overview
 **Saqyati** is an intelligent IoT plant-care device designed for indoor greenery in apartments, offices, and modern homes. It addresses the common struggle of erratic watering schedules, under-watering during travel, and over-watering that leads to root rot, offering an automated, data-driven alternative to manual watering.
